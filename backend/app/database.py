@@ -3,7 +3,6 @@ from sqlalchemy.orm import DeclarativeBase, sessionmaker
 from app.config import settings
 import ssl
 
-# Supabase requires SSL
 ssl_context = ssl.create_default_context()
 ssl_context.check_hostname = False
 ssl_context.verify_mode = ssl.CERT_NONE
